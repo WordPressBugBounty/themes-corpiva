@@ -1,0 +1,127 @@
+/*
+Theme Name: 	   Corpiva
+Text Domain: 	   corpiva
+Version:            1.0.16
+Tested up to:       6.6
+Requires at least:  4.7
+Requires PHP:       5.6
+Author:             DesertThemes
+Author URI:         https://desertthemes.com/
+Theme URI:          https://desertthemes.com/themes/corpiva-free/
+Description:        Corpiva is lightweight, highly extendable and multi-purpose WordPress Theme. Corpiva is perfect for Startup, IT Solutions, IT Business, Agencies, Marketing, Consulting and Services Company related to any business websites. Corpiva based on in-depth research into IT Solutions, IT Services, IT Business, Consulting & Software, Digital Solution, Technical Engineering, Technology, and Services Company, to deliver all needed layouts and blocks. It will enable you to create almost any type of website with a beautiful & professional design. Corpiva supports popular WordPress plugins such as Elementor, WPML, Polylang, Yoast SEO, WooCommerce, Contact Form 7, Jetpack, and much more. Corpiva Pro demo https://preview.desertthemes.com/pro/corpiva/
+Tags:               one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
+License: GPLv3 or later
+License URI:  https://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+ */
+ 
+ 
+.process-card .icon i {
+    font-size: 60px;
+}
+
+.dt_post_item .meta li {
+    font-size: 1.4rem;
+    color: var(--dt-secondary-color);
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.dt_post_item .meta i {
+    font-size: 2rem;
+    color: var(--dt-main-color);
+    vertical-align: middle;
+    margin-right: 0.8rem;
+}
+
+.wc-block-components-product-badge {
+    background: var(--dt-main-color);
+    color: #fff;
+}
+
+.wc-block-checkout__actions_row .wc-block-components-checkout-place-order-button {
+    background-color: var(--dt-main-color);
+    color: #fff;
+}
+
+.wc-block-cart-items th {
+    color: var(--dt-main-color);
+}
+
+.wp-block-image figcaption {
+    text-align: center;
+}
+
+div.wc-block-components-order-summary .wc-block-components-order-summary-item__quantity {
+    background: var(--dt-main-color);
+    color: #fff;
+}
+
+.wp-block-embed figcaption {
+    text-align: center;
+}
+
+.has-background.wp-block-read-more {
+    padding: 0.25em 1.375em;
+}
+
+.wc-block-featured-category__link .wp-block-button__link:hover, 
+.wc-block-featured-category__link .wp-block-button__link:focus {
+    color: #fff;
+}
+
+nav.woocommerce-breadcrumb a {
+    text-decoration: none;
+}
+
+.has-text-color a:hover, 
+.has-text-color a:focus {
+    color: inherit;
+}
+
+.wc-block-featured-product__price .woocommerce-Price-amount.amount {
+    color: #fff;
+}
+
+.wp-block-pullquote.has-text-color blockquote {
+    border-left-color: inherit;
+}
+
+.wc-block-featured-product__link a:hover, 
+.wc-block-featured-product__link a:focus {
+    color: #fff;
+}
+
+.wp-block-table figcaption {
+    text-align: center;
+    font-weight: 600;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+    color: #fff;
+	text-decoration: none;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover, 
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:focus {
+    color: #fff;
+}
+
+.wp-block-code.has-text-color code {
+    color: inherit;
+}
+
+.wp-block-code.has-background code {
+    background: inherit;
+}
+
+table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product-name {
+    font-size: 1.5rem;
+}
+
+.wc-block-components-product-metadata .wc-block-components-product-metadata__description>p {
+    font-size: 1.2rem;
+}
