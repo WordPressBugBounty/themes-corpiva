@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.0.21
+Version:            1.0.22
 Tested up to:       6.6
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -145,4 +145,8 @@ table.wc-block-cart-items .wc-block-components-product-price {
 
 ul.wp-block-page-list a {
     text-decoration: none;
+}
+
+.widget.widget_shopping_cart a:before {
+    display:none
 }
