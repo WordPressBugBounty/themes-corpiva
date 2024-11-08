@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.0.23
+Version:            1.0.24
 Tested up to:       6.6
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -153,4 +153,8 @@ ul.wp-block-page-list a {
 
 .widget .wc-block-grid__products a:before {
     display: none;
+}
+
+.has-background.wp-block-post-author {
+    padding: 1rem;
 }
