@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.0.30
+Version:            1.0.31
 Tested up to:       6.7
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -165,6 +165,7 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantit
 
 .wp-block-details summary {
     font-weight: 600;
+    padding: 10px;
 }
 
 .wc-block-components-totals-item__value {
