@@ -80,7 +80,7 @@ $corpiva_enable_post_ttl		= get_theme_mod('corpiva_enable_post_ttl','1');
 										<?php endif; ?>	
 										
 										<?php if($corpiva_enable_post_views=='1'): ?>
-											<li><i class="far fa-eye"></i> <?php echo wp_kses_post(corpiva_get_post_view()); ?></li>
+											<li><i class="far fa-eye"></i> <?php echo wp_kses_post(corpiva_get_post_view(get_the_ID())); ?></li>
 										<?php endif; ?>	
 										
 										<?php if($corpiva_enable_post_rt=='1'): ?>

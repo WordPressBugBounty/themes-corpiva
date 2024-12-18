@@ -789,32 +789,42 @@ class corpiva_walker_page_menu extends Walker_Page{
 }
 
 
-function corpiva_get_post_view() {
-    $count = get_post_meta( get_the_ID(), 'post_views_count', true );
-	if(!empty($count)):
-		return "$count views";
-	else:
-		return "0 views";
-	endif;	
-}
-function corpiva_set_post_view() {
-    $key = 'post_views_count';
-    $post_id = get_the_ID();
-    $count = (int) get_post_meta( $post_id, $key, true );
-    $count++;
-    update_post_meta( $post_id, $key, $count );
-}
-function corpiva_posts_column_views( $columns ) {
-    $columns['post_views'] = 'Views';
-    return $columns;
-}
-function corpiva_posts_custom_column_views( $column ) {
-    if ( $column === 'post_views') {
-        echo corpiva_get_post_view();
+// Function to retrieve the post views count
+function corpiva_get_post_view($post_id) {
+    $count = get_post_meta( $post_id, 'post_views_count', true );
+    if (!empty($count)) {
+        return $count . " views";
+    } else {
+        return "0 views";
     }
 }
-add_filter( 'manage_posts_columns', 'corpiva_posts_column_views' );
-add_action( 'manage_posts_custom_column', 'corpiva_posts_custom_column_views' );
+
+// Function to increment the post views count
+function corpiva_set_post_view() {
+    if (is_single()) {  // Only count views on single post page
+        $post_id = get_the_ID();
+        $key = 'post_views_count';
+        $count = (int) get_post_meta( $post_id, $key, true );
+        $count++;
+        update_post_meta( $post_id, $key, $count );
+    }
+}
+add_action('wp_head', 'corpiva_set_post_view');  // Increment views when viewing a single post
+
+// Add custom column for post views in admin posts list
+function corpiva_posts_column_views( $columns ) {
+    $columns['post_views'] = 'Views';  // Add "Views" column
+    return $columns;
+}
+add_filter('manage_posts_columns', 'corpiva_posts_column_views');
+
+// Display views count in the custom column for posts
+function corpiva_posts_custom_column_views( $column, $post_id ) {
+    if ( $column === 'post_views') {
+        echo corpiva_get_post_view($post_id);  // Display views in the column
+    }
+}
+add_action( 'manage_posts_custom_column', 'corpiva_posts_custom_column_views', 10, 2 ); // Add second argument $post_id
 
 
 /**
