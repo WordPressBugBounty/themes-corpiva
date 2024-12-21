@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.0.35
+Version:            1.0.36
 Tested up to:       6.7
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -185,4 +185,11 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantit
 
 .wc-block-mini-cart__footer .wc-block-mini-cart__footer-actions a {
     text-decoration: none;
+}
+
+.aligncenter, img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
 }
