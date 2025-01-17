@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.0.40
+Version:            1.0.41
 Tested up to:       6.7
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -208,4 +208,8 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product
 
 .wc-block-mini-cart__footer span.wc-block-components-totals-item__label {
     font-size: 1.5rem;
+}
+
+.wp-block-archives-list a {
+    text-decoration: none;
 }
