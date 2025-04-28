@@ -8095,6 +8095,10 @@ body.admin-bar .dt_mobilenav-mainmenu-content {
     font-weight: 800;
 }
 
+.dt_navbar-menu .contact__list .contact__body {
+	white-space: nowrap;
+}
+
 /* Header--one */
 
 .header--one {
