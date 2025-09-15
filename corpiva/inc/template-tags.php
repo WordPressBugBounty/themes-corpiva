@@ -852,3 +852,11 @@ if ( !function_exists( 'corpiva_read_time' ) ):
 		return $totalreadingtime;
 	}
 endif;
+
+add_filter( 'woocommerce_show_admin_notice', function ( $show, $notice ) {
+    if ( 'template_files' === $notice ) {
+        return false;
+    }
+
+    return $show;
+}, 10, 2 );
