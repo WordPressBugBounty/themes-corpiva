@@ -1,13 +1,24 @@
 ( function( $ ){
-    $( document ).ready( function(){
-      $( '.corpiva-btn-get-started' ).on( 'click', function( e ) {
-          e.preventDefault();
-          $( this ).html( 'Processing.. Please wait' ).addClass( 'updating-message' );
-          $.post( corpiva_ajax_object.ajax_url, { 'action' : 'install_act_plugin' }, function( response ){
-              location.href = 'customize.php?corpiva_notice=dismiss-get-started';
-          } );
-      } );
-    } );
+     $( document ).ready( function(){
+        $( '.corpiva-btn-get-started' ).on( 'click', function( e ) {
+            e.preventDefault();
+
+            $( this )
+                .html( 'Processing.. Please wait' )
+                .addClass( 'updating-message' );
+
+            $.post(
+                corpiva_ajax_object.ajax_url,
+                {
+                    action: 'install_act_plugin',
+                    nonce: corpiva_ajax_object.nonce
+                },
+                function( response ){
+                    location.href = 'customize.php?corpiva_notice=dismiss-get-started';
+                }
+            );
+        });
+    });
 
     $( document ).on( 'click', '.notice-get-started-class .notice-dismiss', function () {
         // Read the "data-notice" information to track which notice
