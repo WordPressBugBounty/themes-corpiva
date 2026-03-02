@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.0.99
+Version:            1.1
 Tested up to:       6.9
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -399,4 +399,8 @@ a.wp-block-button__link:focus {
 
 .wp-block-file a {
     text-decoration: none;
+}
+
+.wp-block-file.has-background {
+    padding: 1rem;
 }
