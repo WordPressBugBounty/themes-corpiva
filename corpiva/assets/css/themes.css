@@ -8723,7 +8723,7 @@ button.dt_uptop {
 
 /* Post Single */
 
-.single-post {
+.post.single-post {
     margin-bottom: 6rem;
 }
 
