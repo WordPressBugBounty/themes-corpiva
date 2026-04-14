@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.1.4
+Version:            1.1.5
 Tested up to:       6.9
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -411,5 +411,9 @@ a.wp-block-button__link:focus {
 
 table.wc-block-cart-items .wc-block-cart-items__header th {
     font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.wc-block-components-sidebar-layout.wc-block-cart .wc-block-cart__totals-title {
     font-weight: 700;
 }
