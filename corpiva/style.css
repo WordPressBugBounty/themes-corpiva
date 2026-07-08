@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.1.11
+Version:            1.1.12
 Tested up to:       7.0
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -437,4 +437,8 @@ table.wc-block-cart-items .wc-block-cart-items__header th {
 
 .dt_footer .widget.widget_products ins .woocommerce-Price-amount.amount {
     color:#fff;
+}
+
+.woocommerce ul.products li.product a:focus .woocommerce-loop-product__title {
+    color: var(--dt-main-color);
 }
