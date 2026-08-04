@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.1.14
+Version:            1.1.15
 Tested up to:       7.0
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -445,4 +445,8 @@ table.wc-block-cart-items .wc-block-cart-items__header th {
 
 .wp-block-list li a:not(:hover):not(:focus) {
     text-decoration: none;
+}
+
+.wp-block-search.wp-block-search__button-only .wp-block-search__button {
+    background-color: var(--dt-main-color);
 }
