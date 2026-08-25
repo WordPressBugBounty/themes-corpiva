@@ -1,9 +1,9 @@
 === Corpiva ===
 Contributors: DesertThemes
 Requires at least: 4.7
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 1.1.17
+Stable tag: 1.1.18
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
@@ -105,6 +105,9 @@ License: Creative Commons Zero
 
 
 == Changelog ==
+
+@version 1.1.18
+* Tested - By WordPress 7.1
 
 @version 1.1.17
 * Tested - By WordPress 7.0.4 
