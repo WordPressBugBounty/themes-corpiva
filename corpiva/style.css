@@ -1,7 +1,7 @@
 /*
 Theme Name: 	   Corpiva
 Text Domain: 	   corpiva
-Version:            1.1.19
+Version:            1.1.20
 Tested up to:       7.1
 Requires at least:  4.7
 Requires PHP:       5.6
@@ -451,6 +451,6 @@ table.wc-block-cart-items .wc-block-cart-items__header th {
     background-color: var(--dt-main-color);
 }
 
-.wp-block-accordion-heading__toggle {
+.wp-block-accordion-heading.has-background .wp-block-accordion-heading__toggle {
     padding: 1rem;
 }
